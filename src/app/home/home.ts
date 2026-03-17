@@ -8,17 +8,16 @@ import { Housinglocationinfo } from '../housinglocationinfo';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-
 export class Home {
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
-  housingLocation: Housinglocationinfo = (
+  housingLocation: Housinglocationinfo = {
     id: 9999,
     name: 'Test Home',
     city: 'Test City',
     state: 'ST',
-    photo: "https://angular.dev/assets/images/tutorials/common/example-house.jpg",  //`${this.baseUrl}/example-house.jpg`,
+    photo: `${this.baseUrl}/example-house.jpg`,
     availableUnits: 99,
     wifi: true,
     laundry: false,
-  )
+  };
 }
